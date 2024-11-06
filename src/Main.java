@@ -35,7 +35,7 @@ public class Main {
 
         // Main loop to interact with the user in the shop
         while (true) {
-            System.out.println("\nWelcome to the online store " + user.getName() + "! Select an action:");
+            System.out.println("\nWelcome to the online store, " + user.getName() + "! Select an action:");
             System.out.println("1. View products");
             System.out.println("2. Add Product to Cart");
             System.out.println("3. Choose a payment method");
@@ -84,7 +84,7 @@ public class Main {
                         paymentContext.setPaymentStrategy(new PayPalPayment());
                         System.out.println("You have chosen to pay via PayPal.");
                     } else {
-                        System.out.println("Неверный выбор.");
+                        System.out.println("Wrong choice.");
                     }
                     break;
 
